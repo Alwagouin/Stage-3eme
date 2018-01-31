@@ -1,6 +1,6 @@
 #include "SR04.h"
-#define TRIG_PIN 5
-#define ECHO_PIN 4
+#define TRIG_PIN 12
+#define ECHO_PIN 11
 SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
 long a;
 
@@ -13,5 +13,5 @@ void loop() {
    a=sr04.Distance();
    Serial.print(a);
    Serial.println("cm");
-   delay(500);
+   delay(1000);
 }

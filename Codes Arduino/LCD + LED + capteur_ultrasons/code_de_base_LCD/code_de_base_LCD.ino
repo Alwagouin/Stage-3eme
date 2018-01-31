@@ -14,6 +14,6 @@ void loop() {
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 1);
   // print the number of seconds since reset:
-  lcd.print(1);
+  lcd.print(millis() / 1000);
 }
 
